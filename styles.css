@@ -1,0 +1,73 @@
+:root {
+    --color-pattern: #fff;
+    --color-stripes-bg: #808;
+    --color-egg-bg: #00f;
+    --color-bg: #080;
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+.egg {
+    width: 200px;
+    height: 300px;
+    background-color: var(--color-egg-bg);
+    margin: 60px;
+    border-radius: 100px / 180px 180px 120px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 30px 0;
+    box-sizing: border-box;
+    
+}
+
+.stripe {
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-stripes-bg);
+    border-top: 5px solid var(--color-pattern);
+    border-bottom: 5px solid var(--color-pattern);
+}
+
+.stripe--dots {
+    background-image: 
+    radial-gradient(var(--color-pattern) 2px, transparent 2px),
+    radial-gradient(var(--color-pattern) 4px, transparent 4px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+.stripe--heart {
+    background-image: 
+    linear-gradient(135deg, var(--color-pattern) 15%, transparent 0),
+    linear-gradient(225deg, var(--color-pattern) 15%, transparent 0),
+    radial-gradient(var(--color-pattern) 30%, transparent 0),
+    radial-gradient(var(--color-pattern) 30%, transparent 0);
+    background-size: 40px 40px;
+    background-position: 26px 23px, 26px 23px, 0 -3px, 12px -3px;
+}
+
+.stripe--pattern {
+
+    background-image: 
+    radial-gradient(var(--color-pattern) 30%, transparent 0),
+    radial-gradient(var(--color-pattern) 30%, transparent 0),
+    radial-gradient(var(--color-pattern) 30%, transparent 0),
+    radial-gradient(var(--color-pattern) 30%, transparent 0);
+    background-size: 20px 20px;
+    background-position: 0 0, 5px 5px, 10px 10px, 0 0;
+}
+
+.stripe--gras {
+    background-image: 
+    linear-gradient(45deg, var(--color-pattern) 25%, transparent 0),
+    linear-gradient(45deg, var(--color-pattern) 25%, transparent 0),
+    linear-gradient(45deg, var(--color-pattern) 25%, transparent 0),
+    linear-gradient(45deg, var(--color-pattern) 25%, transparent 0),
+    linear-gradient(45deg, var(--color-pattern) 25%, transparent 0);
+    background-size: 20px 20px;
+    background-position: 2px 0, 4px 0, 6px 0, 12px 0, 16px 0;
+}
